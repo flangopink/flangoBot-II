@@ -1,8 +1,12 @@
-# Bot Base
+# Flango's bot (now on github. yay)
 
-> A simple Discord.js bot base.
+> yeet
 
-This is an extremely simple Discord.js bot base with a config loader / validator, a command handler, and a simple ping command. All code should be pretty self-explanatory.
+Use //help for help and stuff
+feel free to point out and fix issues
+
+
+
 
 ## Hack the Source, Luke!
 
@@ -10,6 +14,6 @@ Just fork the repo, clone your newly made fork, and copy the `config-example.jso
 
 It would be appreciated if you would provide a link back to this original version though, as well as an optional link to [Rayzr's Discord server](https://discord.io/rayzrdevofficial).
 
-## Join Me
+## Join Rayzr
 
 [![Discord Badge](https://github.com/Rayzr522/ProjectResources/raw/master/RayzrDev/badge-small.png)](https://discord.io/rayzrdevofficial)
