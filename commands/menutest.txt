@@ -1,0 +1,251 @@
+var Discord = require('discord.js');
+
+exports.run = (bot, msg, args) => {
+	
+function send2Embeds(msg) {
+    let senddm = msg.author;
+
+	if (msg.author.bot) return; // will not listen to bots
+
+    mentionedUser = msg.mentions.members.first()
+    // console.log(mentionedUser)
+
+    //if (!mentionedUser) {
+		
+		let	embed1 = msg.author.send({
+            embed: {
+                color: 0xff8cb4,
+                author: {
+                    name: bot.user.username,
+                    icon_url: bot.user.avatarURL
+                },
+                title: "By Flango <:flango:533230324436566047>",
+                description: "__**List of commands (Page 1):**__",
+                fields: [
+
+
+                    {
+                        name: ":robot: **__BOT COMMANDS__**",
+                        value: ":wrench: __ping pong__"
+                    },
+
+
+                    {
+                        name: "/help",
+                        value: "Shows this message."
+                    },
+					{
+                        name: "/mischelp",
+                        value: "Shows a list of other commands which are mostly useless."
+                    },
+                    {
+                        name: "/ping",
+                        value: "Pings the bot."
+                    },
+                    {
+                        name: "/reset |  /reboot  |  /restart  |  /kys",
+                        value: "Reboots the bot. (Admins only)"
+                    },
+					{
+                        name: "/contactdev `*message*`",
+                        value: "Sends a DM to bot's dev. \n Use it in case the bot breaks or does weird shit"
+                    },
+                    {
+                        name: "/say `*message*`",
+                        value: "Repeats after you."
+                    },
+					
+					{
+                        name: "/yesnovote  |  /12vote  |  /123vote  |  /1234vote  |  /12345vote  |  /123456vote  |  /1234567vote  |  /12345678vote `*message*`",
+                        value: "Sets up a vote."
+                    },
+
+					
+                    {
+                        name: ":thinking: **__USEFUL STUFF__**",
+                        value: ":tools: __(more will be added)__"
+                    },
+
+					
+                    {
+                        name: "/avatar @someone",
+                        value: "Sends an avatar of the mentioned person."
+                    },
+					
+                ],
+                timestamp: new Date(),
+                footer: {
+                    icon_url: msg.author.avatarURL,
+                    text: "Requested by " + `${msg.member.nickname || msg.author.username}`
+                }
+            }
+        });
+  
+		let	embed2 = msg.author.send({
+            embed: {
+                color: 0xff8cb4,
+                author: {
+                    name: bot.user.username,
+                    icon_url: bot.user.avatarURL
+                },
+                title: "BLUE TEXT",
+                url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+                description: "__**List of commands (Page 2):**__",
+                fields: [
+					
+                    {
+                        name: ":revolving_hearts: **__INTERACTIONS__**",
+                        value: ":heartpulse: __hug, kiss and beat people up!__"
+                    },
+
+
+                    {
+                        name: "/kiss @someone",
+                        value: "Kiss the mentioned person."
+                    },
+                    {
+                        name: "/hug @someone",
+                        value: "Hug the mentioned person."
+                    },
+
+                    {
+                        name: "/ykiss @someone",
+                        value: "Sends a yaoi kiss gif."
+                    },
+                    {
+                        name: "/yhug @someone",
+                        value: "Sends a yaoi hug gif."
+                    },
+
+                    {
+                        name: "/cuddle @someone",
+                        value: "Cuddle with the mentioned person."
+                    },
+
+                    {
+                        name: "/beat the shit out of @someone",
+                        value: "Self explanatory."
+                    },
+                    {
+                        name: "/tickle @someone",
+                        value: "Tickle the mentioned person."
+                    },
+                    {
+                        name: "/smash @someone",
+                        value: "Sends a nsfw yaoi gif probably **(WIP)**."
+                    },
+
+                    {
+                        name: "/pat @someone",
+                        value: "Pat the mentioned person."
+                    },
+                ],
+                timestamp: new Date(),
+                footer: {
+                    icon_url: msg.author.avatarURL,
+                    text: "Requested by " + `${msg.member.nickname || msg.author.username}`
+                }
+            }
+        })
+
+
+		let	embed3 = msg.author.send({
+            embed: {
+                color: 0xff8cb4,
+                author: {
+                    name: bot.user.username,
+                    icon_url: bot.user.avatarURL
+                },
+                title: "BLUE TEXT",
+                url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+                description: "__**List of commands (Page 3):**__",
+                fields: [
+
+                    {
+                        name: ":space_invader: **__GAMES__**",
+                        value: ":game_die: __(more will be added)__"
+                    },
+
+
+                    {
+                        name: "/coin",
+                        value: "Flip a coin."
+                    },
+
+                    {
+                        name: "/rps",
+                        value: "Rock, Paper, Scissors."
+                    },
+
+
+                    {
+                        name: ":cat: **__RANDOM PICS AND GIFS__**",
+                        value: ":dog: __meowers, woofers, memes and cute girls!__"
+                    },
+
+
+                    {
+                        name: "/meme",
+                        value: "Sends a meme."
+                    },
+
+                    {
+                        name: "~~/lewd~~",
+                        value: "~~Sends a nsfw pic/gif. (**WIP**)~~"
+                    },
+
+
+                    {
+                        name: "/cat",
+                        value: "Sends a cat pic."
+                    },
+
+                    {
+                        name: "/dog",
+                        value: "Sends a doggo pic."
+                    },
+
+                    {
+                        name: "/neko",
+                        value: "Sends a neko pic."
+                    },
+
+                    {
+                        name: "/gifneko",
+                        value: "Sends a neko gif. (sometimes may be a little nsfw)"
+                    },
+
+                    {
+                        name: "/smug",
+                        value: "Sends a smug gif."
+                    },
+
+                    {
+                        name: "/lizard",
+                        value: "Sends a lizard pic."
+                    },
+
+                ],
+                timestamp: new Date(),
+                footer: {
+                    icon_url: msg.author.avatarURL,
+                    text: "Requested by " + `${msg.member.nickname || msg.author.username}`
+                }
+            }
+        })
+		
+		senddm.send(embed1)
+		.then(msg => {
+        senddm.send(embed2);
+		.then(msg => {
+        senddm.send(embed3)
+		})});
+    }
+}
+
+
+exports.help = {
+    name: 'menutest',
+    usage: 'menutest',
+    description: 'menutest.'
+};

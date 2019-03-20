@@ -1,0 +1,14 @@
+{
+  "name": "bot-base",
+  "version": "1.0.0",
+  "description": "A simple Discord.js bot base.",
+  "main": "bot.js",
+  "repository": "https://github.com/RayzrDev/bot-base.git",
+  "author": "Rayzr522 <rayzr522@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^11.3.2",
+    "random-puppy": "^1.1.0",
+    "superagent": "^4.1.0"
+  }
+}
